@@ -1,0 +1,236 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Styling the Body */
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    height: 100%;
+    background-color: #f4f4f4;
+    overflow-x: hidden;
+    /* Prevent horizontal overflow */
+}
+
+/* Top Navigation Bar Styling */
+.topbar {
+    width: 100%;
+    background: linear-gradient(90deg, #ff9c15, #47915b);
+    color: white;
+    padding: 15px 0;
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+.logo a {
+    color: black;
+    font-weight: 900;
+    padding: 10px 20px;
+    text-decoration: none;
+}
+
+.auth-links a {
+    color: black;
+    font-weight: 900;
+    padding: 10px 20px;
+    text-decoration: none;
+}
+
+.auth-links a i {
+    font-size: 20px;
+    font-weight: 900;
+}
+
+.auth-links a:hover {
+    background-color: #575757;
+}
+
+
+.menu {
+    background-color: white;
+    color: black;
+    position: absolute;
+    top: 3.5rem;
+    right: 10px;
+    border-radius: 5px;
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.1);
+    z-index: 500;
+    display: none;
+    /* Hide menu by default */
+}
+
+.menu ul {
+    list-style-type: none;
+    padding: 8px;
+    margin: 0;
+}
+
+.menu ul li {
+    padding: 8px 8px;
+}
+
+.menu ul li a {
+    text-decoration: none;
+    color: black;
+}
+
+.menu ul li:hover {
+    background-color: #f0f0f0;
+    /* Highlight on hover */
+}
+
+/* ******************* */
+.mainContent {
+    height: 100%;
+    padding: 70px;
+    width: 98%;
+    margin: auto auto;
+    background-color: #f4f4f4;
+}
+
+/* Hide content sections by default */
+.content {
+    /* display: none; */
+    height: 100%;
+    width: 100%;
+    /* padding: 70px; */
+    margin: auto auto;
+    background-color: #f4f4f4;
+    /* Adjust height as per your need */
+    overflow-y: auto;
+    /* Enable vertical scrolling */
+    display: block;
+}
+
+/* Show content when active */
+.content.active {
+    display: block;
+}
+
+
+h2 {
+    margin-top: 1.5rem;
+}
+
+.controls {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    align-items: center;
+}
+
+label {
+    font-size: 14px;
+}
+
+/* Form table styling */
+.form-table {
+    margin-bottom: 20px;
+}
+
+.form-table table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.form-table th,
+.form-table td {
+    padding: 5px;
+    text-align: center;
+}
+
+.form-table th {
+    background-color: transparent;
+    font-weight: bold;
+    border: none;
+}
+
+.form-table td {
+    border: none;
+}
+
+/* Input and select styles */
+input,
+select {
+    width: 90%;
+    padding: 8px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+input[type="date"] {
+    width: 100%;
+}
+
+/* Add button styling */
+button.add-button {
+    /* margin-left: 1rem; */
+    /* margin-right: 1rem; */
+    padding: 10px;
+    background-color: #28a745;
+    color: white;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    width: 100%;
+}
+
+button.edit-button {
+    background-color: #2831a7;
+}
+
+button.delete-button {
+    background-color: #a72828;
+}
+
+button.add-button:hover {
+    background-color: #218838;
+}
+
+/* Inventory table styling */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+th,
+td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: center;
+}
+
+th {
+    background-color: #948c8c;
+    font-weight: bold;
+}
+
+/* Total row styling */
+.total-row {
+    font-weight: bold;
+    background-color: #ddd;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #333;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+}
+
+button:hover {
+    background-color: #555;
+}
+
